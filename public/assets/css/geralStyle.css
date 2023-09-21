@@ -1,0 +1,87 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+            }
+        
+            body{
+                /*background:#57489b linear-gradient(to right,  #299, #299);*/
+                background: #57489b;
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            }
+        
+            header{
+                background: #161225;
+                min-height: 5vh; 
+            }
+        
+            footer{
+                color: white;
+                background: #161225;
+                min-height: 50vh;
+                width: 100%;
+            }
+        
+            input[type="submit"], button[type="submit"]{
+                background: #299;
+                color: white;
+                font-weight: bold;
+            }
+        
+            input[type="submit"]:hover, button[type="submit"]:hover, #terminarSessao{
+                background: #161225;
+                color: white;
+            }
+        
+            input[type="text"], input[type="email"], input[type="number"], input[type="password"]{
+                color: #299;
+                background: white;
+                font-weight: bold;
+            }
+        
+            .txtCriarConta{
+                color:  #f7f6f8;
+                font-weight: bold;
+            }
+        
+            .txtCriarConta:hover{
+                background: rgb(7, 83, 83);
+                color: white;
+                width: 150px;
+            }
+        
+            ul li{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        
+            ul li:hover{
+                color: white;
+                background: #299;
+            }
+            
+            .custom-select{
+                background: transparent;
+                color: #299;
+                font-weight: bold;
+                width: 100%;
+                height: 45px;
+            }
+        
+            .custom-select:focus{
+                background: transparent;
+                color: white;
+            }
+        
+            option{
+                background: #299;
+                color: white;
+                font-weight: bold;
+            }
+    
+            select.form-control:focus, input[type="file"]:focus{
+                color: #299;
+            }
+        
+                

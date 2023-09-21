@@ -1,0 +1,22 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background: #299;
+    border-radius: 30px;
+    color: white;
+    margin-left: -10px;
+}
+
+#notificacao:hover, #balaochat:hover, #nota:hover {
+    background: #299;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul:hover li{
+    display: block;
+}
+
