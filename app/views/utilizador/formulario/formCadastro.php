@@ -472,7 +472,7 @@
                 <div class="col d-flex justify-content-center pt-4">
                     <center>
                         <div class="col mb-5">
-                            <input onClick="ClickLogar()" name="btnSubmit" class="btn" type="submit" value="Cadastrar"
+                            <input name="btnSubmit" class="btn" type="submit" value="Cadastrar"
                                 name="btnSubmit" id="btnSubmit" style="width: 100%;"> <br><span id="spinner"
                                 class=''></span>
                             <br>
