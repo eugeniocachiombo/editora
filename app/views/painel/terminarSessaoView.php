@@ -1,9 +1,10 @@
-<?php 
-if(!empty($_SESSION["processando"])){
-    unset($_SESSION["processando"]); 
+<?php
+if ( !empty( $_SESSION[ 'processando' ] ) ) {
+    unset( $_SESSION[ 'processando' ] );
 }
-session_destroy(); 
+session_destroy();
 ?>
 <script>
-window.location = "/inicio/index"
+    localStorage.clear("cookies");
+    window.location = '/inicio/index';
 </script>

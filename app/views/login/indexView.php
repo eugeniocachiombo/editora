@@ -21,6 +21,5 @@
 <!--FOOTER HTML-->
 <?php require_once "../app/views/default/htmlFooter.php"; ?>
 
-
-
+<script src="/assets/js/cookies.js"></script>
 

@@ -10,7 +10,7 @@
         $folderViews = "../app/views/".lcfirst($classe).".php";
         $folderCore = "../app/core/".lcfirst($classe).".php";
         $folderConfig = "../app/config/".lcfirst($classe).".php";
-
+        
 
         // autoloads 
             if(file_exists($file)){
@@ -48,3 +48,4 @@
         // end
     });
 ?>
+

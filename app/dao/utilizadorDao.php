@@ -201,10 +201,10 @@ class UtilizadorDao extends UtilizadorModel implements Crud
         $stmt->bindValue( 1, $email );
         $stmt->bindValue( 2, $passe );
         $stmt->execute();
-        $resultado = $stmt->fetch();
+        $utilizador = $stmt->fetch();
 
-        if ( !empty( $resultado ) ) {
-            $this->DadosUtilizador( $resultado );
+        if ( !empty( $utilizador ) ) {
+            $this->DadosUtilizador( $utilizador );
             $_SESSION[ 'processando' ] = '/painel/Index';
             ?>
             <script>
@@ -229,12 +229,10 @@ class UtilizadorDao extends UtilizadorModel implements Crud
         $stmt->bindValue( 1, $telefone );
         $stmt->bindValue( 2, $passe );
         $stmt->execute();
-        $resultado = $stmt->fetch();
+        $utilizador = $stmt->fetch();
 
-        if ( !empty( $resultado ) ) {
-
-            $this->DadosUtilizador( $resultado );
-
+        if ( !empty( $utilizador ) ) {
+            $this->DadosUtilizador( $utilizador );
             $_SESSION[ 'processando' ] = '/painel/Index';
             ?>
             <script>
@@ -252,28 +250,36 @@ class UtilizadorDao extends UtilizadorModel implements Crud
 
     }
 
-    function DadosUtilizador( $resultado ) {
+    function DadosUtilizador( $utilizador ) {
         session_start();
-        $_SESSION[ 'idUtilizador' ] = $resultado[ 'idUtilizador' ];
-        $_SESSION[ 'nomeUtilizador' ] = $resultado[ 'nomeUtilizador' ];
-        $_SESSION[ 'sobrenomeUtilizador' ] = $resultado[ 'sobrenomeUtilizador' ];
-        $_SESSION[ 'nomeArtisticoUtilizador' ] = $resultado[ 'nomeArtisticoUtilizador' ];
-        $_SESSION[ 'NIFUtilizador' ] = $resultado[ 'NIFUtilizador' ];
-        $_SESSION[ 'emailUtilizador' ] = $resultado[ 'emailUtilizador' ];
-        $_SESSION[ 'telefoneUtilizador' ] = $resultado[ 'telefoneUtilizador' ];
-        $_SESSION[ 'senhaUtilizador' ] = $resultado[ 'senhaUtilizador' ];
-        $_SESSION[ 'nacionalidadeUtilizador' ] = $resultado[ 'nacionalidadeUtilizador' ];
-        $_SESSION[ 'dataNascimentoUtilizador' ] = $resultado[ 'dataNascimentoUtilizador' ];
-        $_SESSION[ 'generoUtilizador' ] = $resultado[ 'generoUtilizador' ];
-        $_SESSION[ 'idTipoAcesso' ] = $resultado[ 'idTipoAcesso' ];
-        $_SESSION[ 'descricaoTipoAcesso' ] = $resultado[ 'descricaoTipoAcesso' ];
-        $_SESSION[ 'idProvincia' ] = $resultado[ 'idProvincia' ];
-        $_SESSION[ 'nomeProvincia' ] = $resultado[ 'nomeProvincia' ];
-        $_SESSION[ 'idMunicipio' ] = $resultado[ 'idMunicipio' ];
-        $_SESSION[ 'nomeMunicipio' ] = $resultado[ 'nomeMunicipio' ];
-        $_SESSION[ 'endereco' ] = $resultado[ 'endereco' ];
+        $this->ValidarCookie($utilizador);
+        $_SESSION[ 'idUtilizador' ] = $utilizador[ 'idUtilizador' ];
+        $_SESSION[ 'nomeUtilizador' ] = $utilizador[ 'nomeUtilizador' ];
+        $_SESSION[ 'sobrenomeUtilizador' ] = $utilizador[ 'sobrenomeUtilizador' ];
+        $_SESSION[ 'nomeArtisticoUtilizador' ] = $utilizador[ 'nomeArtisticoUtilizador' ];
+        $_SESSION[ 'NIFUtilizador' ] = $utilizador[ 'NIFUtilizador' ];
+        $_SESSION[ 'emailUtilizador' ] = $utilizador[ 'emailUtilizador' ];
+        $_SESSION[ 'telefoneUtilizador' ] = $utilizador[ 'telefoneUtilizador' ];
+        $_SESSION[ 'senhaUtilizador' ] = $utilizador[ 'senhaUtilizador' ];
+        $_SESSION[ 'nacionalidadeUtilizador' ] = $utilizador[ 'nacionalidadeUtilizador' ];
+        $_SESSION[ 'dataNascimentoUtilizador' ] = $utilizador[ 'dataNascimentoUtilizador' ];
+        $_SESSION[ 'generoUtilizador' ] = $utilizador[ 'generoUtilizador' ];
+        $_SESSION[ 'idTipoAcesso' ] = $utilizador[ 'idTipoAcesso' ];
+        $_SESSION[ 'descricaoTipoAcesso' ] = $utilizador[ 'descricaoTipoAcesso' ];
+        $_SESSION[ 'idProvincia' ] = $utilizador[ 'idProvincia' ];
+        $_SESSION[ 'nomeProvincia' ] = $utilizador[ 'nomeProvincia' ];
+        $_SESSION[ 'idMunicipio' ] = $utilizador[ 'idMunicipio' ];
+        $_SESSION[ 'nomeMunicipio' ] = $utilizador[ 'nomeMunicipio' ];
+        $_SESSION[ 'endereco' ] = $utilizador[ 'endereco' ];
     }
 
+    function ValidarCookie($utilizador){
+        ?> 
+            <script>
+                localStorage.setItem("cookies", "<?php echo $utilizador["idUtilizador"]; ?>");
+            </script> 
+        <?php
+    }
 }
 
 ?>

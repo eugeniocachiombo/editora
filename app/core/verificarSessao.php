@@ -6,5 +6,4 @@ if ( empty( $_SESSION[ 'idUtilizador' ] ) ) {
         </script>
     <?php
 }
-
 ?>

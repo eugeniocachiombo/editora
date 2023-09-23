@@ -3,7 +3,6 @@
 <title><?php echo $title ?></title>
 
 <!--------------------------------------------------------->
-
 <?php echo "<hr><h1> Método ".$nomeMetodo."</h1><hr>"; ?>
 
 <form action="/inicio/Index" method="post">
@@ -44,3 +43,5 @@
 
 <!--FOOTER HTML-->
 <?php require_once "../app/views/default/htmlFooter.php"; ?>
+
+<script src="/assets/js/cookies.js"></script>
