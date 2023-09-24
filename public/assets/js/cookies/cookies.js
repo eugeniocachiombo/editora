@@ -8,5 +8,6 @@
  */
 
 if (localStorage.getItem("cookies") != null ) {
-    window.location = "/painel";
+        window.location = "/painel";
 }
+

@@ -1,3 +1,5 @@
+
+
 <!--HEADER HTML-->
 <?php require_once "../app/views/default/htmlHead.php"; ?>
 <title><?php echo $title ?></title>
@@ -44,4 +46,4 @@
 <!--FOOTER HTML-->
 <?php require_once "../app/views/default/htmlFooter.php"; ?>
 
-<script src="/assets/js/cookies.js"></script>
+<script src="/assets/js/cookies/cookies.js"></script>

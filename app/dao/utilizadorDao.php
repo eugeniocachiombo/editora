@@ -212,7 +212,6 @@ class UtilizadorDao extends UtilizadorModel implements Crud
             </script>
             <?php
         } else {
-
             ?>
             <script>
             Swal.fire( 'Utilizador Não Encontrado!', 'Erro ao Logar!!', 'error' );
@@ -277,6 +276,7 @@ class UtilizadorDao extends UtilizadorModel implements Crud
         ?> 
             <script>
                 localStorage.setItem("cookies", "<?php echo $utilizador["idUtilizador"]; ?>");
+                localStorage.setItem("status", "activo");
             </script> 
         <?php
     }

@@ -119,5 +119,3 @@
     </div>
 </form>
 
-<!--BUSCAR VALIDAÇÃO DE CAMPOS VAZIOS-->
-<script src="/assets/js/validarCampo.js"></script>

@@ -3,7 +3,6 @@
 <title><?php echo $title ?></title>
 
 <!--------------------------------------------------------->
-
 <!--Menu-->
 <?php require_once "../app/views/default/menu.php"; ?>
 
@@ -15,11 +14,10 @@
 
 <!--FOOTER -->
 <?php require_once "../app/views/default/footer.php";?>
-
 <!--------------------------------------------------------->
 
 <!--FOOTER HTML-->
 <?php require_once "../app/views/default/htmlFooter.php"; ?>
 
-<script src="/assets/js/cookies.js"></script>
+<script src="/assets/js/cookies/cookies.js"></script>
 
