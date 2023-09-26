@@ -276,7 +276,6 @@ class UtilizadorDao extends UtilizadorModel implements Crud
         ?> 
             <script>
                 localStorage.setItem("cookies", "<?php echo $utilizador["idUtilizador"]; ?>");
-                localStorage.setItem("status", "activo");
             </script> 
         <?php
     }
