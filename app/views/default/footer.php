@@ -1,6 +1,6 @@
 <!--RODAPÉ -->
 <footer>
-    <div class="row d-block d-md-flex" style="width: 100%; font-size: 14px">
+    <div class="row d-block d-md-flex pb-2" style="width: 100%; font-size: 14px">
 
         <!--SOBRE A EMPRESA-->
         <div class="col pt-2" style="height: auto;">

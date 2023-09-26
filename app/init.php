@@ -73,12 +73,12 @@ class Init {
         }
 
         if ( method_exists( $controller, $nomeMetodo ) ) {
-            $this->parametro[ 0 ] = $nomeController;
             // Para simbolizar o nome da pasta
-            $this->parametro[ 1 ] = $nomeController;
+            $this->parametro[ 0 ] = $nomeController;
             // Para simbolizar o nome do contoller
-            $this->parametro[ 2 ] = $nomeMetodo;
+            $this->parametro[ 1 ] = $nomeController;
             // Para simbolizar o nome do método
+            $this->parametro[ 2 ] = $nomeMetodo;
             call_user_func_array( [ $controller, $nomeMetodo ], $this->parametro );
         } else {
             $_SESSION[ 'error_info' ] = 'Método do Controlador não encontrado ::: '.$nomeMetodo;

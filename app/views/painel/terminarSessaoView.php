@@ -5,6 +5,6 @@ if ( !empty( $_SESSION[ 'processando' ] ) ) {
 session_destroy();
 ?>
 <script>
-    localStorage.clear("cookies");
+    localStorage.clear('cookies');
     window.location = '/inicio/index';
 </script>

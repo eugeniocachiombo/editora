@@ -1,6 +1,3 @@
-<!--ACESSAR O COOKIE-->
-<script src="/assets/js/cookies/cookies.js"></script>
-
 <!--HEADER HTML-->
 <?php require_once "../app/views/default/htmlHead.php"; ?>
 <title><?php echo $title ?></title>
@@ -47,3 +44,5 @@
 <!--FOOTER HTML-->
 <?php require_once "../app/views/default/htmlFooter.php"; ?>
 
+<!--ACESSAR O COOKIE-->
+<script src="/assets/js/cookies/cookies.js"></script>

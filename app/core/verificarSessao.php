@@ -2,7 +2,22 @@
 if ( empty( $_SESSION[ 'idUtilizador' ] ) ) {
     ?>
         <script>
-             window.location = '/login/Index';
+           Swal.fire({
+                        title: 'Erro de sessão!',
+                        text: "Pretende iniciar sessão?",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Sim, pretendo',
+                        cancelButtonText: "Cancelar"
+            }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location = "/login";
+                    }else{
+                        window.location = "/Impossivel visualizar esta página ";
+                    }
+            });
         </script>
     <?php
 }

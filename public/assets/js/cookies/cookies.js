@@ -7,7 +7,8 @@
  * 
  */
 
+console.log("Cookie: " + localStorage.getItem("cookies") );
 if (localStorage.getItem("cookies") != null ) {
-    //    window.location = "/painel";
+    window.location = "/painel";
 }
 

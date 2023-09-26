@@ -1,10 +1,9 @@
-<!--VERIFICAR SESSÃO-->
-    <?php require_once "../app/core/verificarSessao.php";?>
-
-
 <!--HEADER HTML-->
     <?php require_once "../app/views/default/htmlHead.php"; ?>
     <title><?php echo $title ?></title>
+
+<!--VERIFICAR SESSÃO-->
+<?php require_once "../app/core/verificarSessao.php";?>
 
 <!--LINK CSS-->
     <link rel="stylesheet" href="/assets/css/painel.css">
