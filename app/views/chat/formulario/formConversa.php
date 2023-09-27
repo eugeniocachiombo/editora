@@ -2,8 +2,7 @@
 require_once '../app/config/db.php';
 $destino = $_SERVER[ 'REQUEST_URI' ];
 $destino = explode( 'destino=', $destino );
-$_SESSION[ 'idUtilizadorDestino' ] = 1;
-//$_SESSION[ 'idUtilizadorDestino' ] = $destino[ 1 ];
+$_SESSION[ 'idUtilizadorDestino' ] = $destino[ 1 ];
 
 $utilizadorDestino = new UtilizadorDao();
 $utilizadorDestino = $utilizadorDestino->BuscarTodosDadosID( $_SESSION[ 'idUtilizadorDestino' ] );

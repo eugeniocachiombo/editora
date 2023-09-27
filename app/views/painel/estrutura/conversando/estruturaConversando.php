@@ -1,4 +1,3 @@
-
 <div class="container-fluid " style="">
     <!--BARRA DE MENU-->
     <?php require "../app/views/painel/inclusao/menu/telaGrande/menuTelaGrande.php"; ?>
@@ -14,7 +13,7 @@
             <div class="" style="width: 100%;">
                     <?php 
 
-                        require "../app/views/chat/indexView.php";
+                        require "../app/views/chat/conversandoView.php";
                        
                     ?>
             </div>

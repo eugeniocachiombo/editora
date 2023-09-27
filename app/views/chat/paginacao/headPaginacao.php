@@ -1,11 +1,14 @@
 <?php
 // Receber a uri
 require '../app/core/pegarURI.php';
-$pagina = isset( $_POST[ 'pagina' ] ) ? $_POST[ 'pagina' ] : 1;
 
-if ( !empty( $uri[ 2 ] ) && $uri[ 2 ] != 'Chat' ) {
+if ( !empty( $uri[ 2 ] ) && $uri[ 2 ] != 'Chat'  ) {
 
     $uri = explode( '=', $uri[ 2 ] );
+    if($uri[ 2 ] == 0){
+        $uri[ 2 ] = 1;
+        ?> <script>localStorage.setItem("detectarPagina-0", "0");</script> <?php
+    }
     $itensPorPagina = 6;
     $inicio = ( $uri[ 2 ] - 1 ) * $itensPorPagina;
     $paginaActual = $uri[ 2 ];
@@ -16,9 +19,7 @@ if ( !empty( $uri[ 2 ] ) && $uri[ 2 ] != 'Chat' ) {
     $totalchat = $chat->BuscarTotal( $_SESSION[ 'idUtilizador' ], $_SESSION[ 'idUtilizadorDestino' ] );
     $lista = $chat->BuscarPorLimite( $inicio, $itensPorPagina, $_SESSION[ 'idUtilizador' ], $_SESSION[ 'idUtilizadorDestino' ] );
     $totalPaginas = ceil( $totalchat[ 'count(*)' ] / $itensPorPagina );
-
 } else {
-
     $itensPorPagina = 6;
     $inicio = 1;
     $paginaActual = 1;

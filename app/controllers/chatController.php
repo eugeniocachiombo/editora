@@ -42,6 +42,14 @@ class ChatController {
         }
     }
 
+    function Conversando( $nomePasta, $nomeController, $nomeMetodo ) {
+        $nomeController = strval( $nomeController );
+        $dados[ 'title' ] =  ucfirst( $nomeMetodo ) . ' ' . ucfirst( $nomeController );
+        $dados[ 'nomeMetodo' ] = $nomeMetodo;
+        $views = new Views();
+        $views->Load( $nomePasta, $nomeMetodo, $dados );
+    }
+
     function Eliminar( $nomePasta, $nomeController, $nomeMetodo ) {
         $nomeController = strval( $nomeController );
         $dados[ 'title' ] =  ucfirst( $nomeMetodo ) . ' ' . ucfirst( $nomeController );

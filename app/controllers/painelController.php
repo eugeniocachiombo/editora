@@ -50,6 +50,14 @@ class PainelController {
         $views->Load( $nomePasta, $nomeMetodo, $dados );
     }
 
+    function Conversando( $nomePasta, $nomeController, $nomeMetodo ) {
+        $nomeController = strval( $nomeController );
+        $dados[ 'title' ] =  ucfirst( $nomeMetodo ) . ' ' . ucfirst( $nomeController );
+        $dados[ 'nomeMetodo' ] = $nomeMetodo;
+        $views = new Views();
+        $views->Load( $nomePasta, $nomeMetodo, $dados );
+    }
+
     function TerminarSessao( $nomePasta, $nomeController, $nomeMetodo ) {
         $nomeController = strval( $nomeController );
         $dados[ 'title' ] =  ucfirst( $nomeMetodo ) . ' ' . ucfirst( $nomeController );
