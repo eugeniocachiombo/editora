@@ -1,0 +1,22 @@
+Faltando:
+Trabalhando em exibir lista de usuarios que têm conversa, path: chat/formulario/formRelatorio.php
+
+
+organizar as páginas deste modo:
+
+<!----------------------------------------
+
+Chat
+Localidades
+    Nacionalidades
+    Municípios
+    Províncias
+Finanças
+    Pagamentos
+    Saldo da Empresa
+Acesso ao Sistema
+    Contratos
+    Utilizadores
+    Tipo de acesso
+----------------->
+

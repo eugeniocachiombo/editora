@@ -1,0 +1,195 @@
+<!--MAIN-->
+<form action="/Pedido/Cadastrar" method="post" class="needs-validation" novalidate>
+
+    <div class="container-fluid d-table d-md-flex justify-content-center align-items-center pt-5"
+        style="min-height: 315px;">
+        <div class="row d-block form-group" style="width: 100%; ">
+
+            <!--COLEÇÃO PRINCIPAL 1-->
+            <div class="col text-center" style="height: auto">
+                <!--ICONE Pedido-->
+                <div class="col">
+                    <center>
+                        <div class="col-8 pb-1" style="text-align: center;">
+                            <img class="img-fluid" src="/assets/img/icons/user33.png" alt="Perfil" width="17%">
+                        </div>
+                    </center>
+                </div>
+
+                <!--TEXT-->
+                <div class="col pb-1 ">
+                    <center>
+                        <div class="col-8 pb-5 mb-3 d-none d-md-block d-lg-block d-xl-block"
+                            style="text-align: center;">
+                            <legend class=""><?php echo $title ?></legend>
+                        </div>
+
+                        <div class="col d-md-none d-lg-none d-xl-none">
+                            <h5><?php echo $title ?></h5>
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+            <!--COLEÇÃO PRINCIPAL 2-->
+            <div class="col text-center" style="height: auto">
+
+                <!--COLEÇÃO CAMPOS DO FORMULARIO-->
+                <div class="row d-block d-sm-block d-lg-flex d-xl-flex text-center">
+                    <!--CAMPOS 1-->
+                    <div class="col text-center">
+                        <!--FORM NAME-->
+                        <div class="col pt-2">
+                            <center>
+                                <div class="col-8  d-none d-md-block d-lg-block d-xl-block">
+                                    <label for="TituloPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Titulo:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 d-sm-block d-md-none d-lg-none d-xl-none ">
+                                    <label for="TituloPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Titulo:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8" style="margin-top: -15px">
+                                    <input title="Deve conter no míninimo 3 caracteres" minlength="3"
+                                        pattern="^[A-Za-z¿-ˇ]+(?: [A-Za-z¿-ˇ]+)*$" maxlength="20" required
+                                        class="form-control" type="text" name="txtTituloPedido" id="txtTituloPedido">
+                                    <div class="invalid-feedback" style="font-size: 16px; text-align: left">
+                                        Introduza o titulo
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                        <!--FORM Descricao-->
+                        <div class="col pt-2">
+                            <center>
+                                <div class="col-8  d-none d-md-block d-lg-block d-xl-block">
+                                    <label for="DescricaoPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Descricao:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 d-sm-block d-md-none d-lg-none d-xl-none ">
+                                    <label for="DescricaoPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Descricao:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8" style="margin-top: -15px">
+                                    <textarea title="Deve conter no míninimo 3 caracteres" minlength="3"
+                                        pattern="^[A-Za-z¿-ˇ]+(?: [A-Za-z¿-ˇ]+)*$" maxlength="400" required
+                                        class="form-control" type="text" name="txtDescricaoPedido"
+                                        id="txtDescricaoPedido" cols="30" rows="5"></textarea>
+                                    <div class="invalid-feedback" style="font-size: 16px; text-align: left">
+                                        Introduza o Descrição
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+
+                    <!--CAMPOS 2-->
+                    <div class="col text-center">
+                        <!--FORM Cargo-->
+                        <div class="col pt-2">
+                            <center>
+                                <div class="col-8  d-none d-md-block d-lg-block d-xl-block">
+                                    <label for="CargoPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Cargo:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 d-sm-block d-md-none d-lg-none d-xl-none ">
+                                    <label for="CargoPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Cargo:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 align-items-center" style="margin-top: -15px" required>
+                                    <select name="txtCargoPedido" id="txtCargoPedido" class="form-control custom-select"
+                                        required>
+                                        <option value="">Selecione...</option>
+                                        <?php 
+                                        $cargos = new CargoArtistaDao();
+                                        $lista = $cargos->Buscar();
+                                        foreach ($lista as $cargo) { ?>
+                                        <option value="<?php echo $cargo["idCargoArtista"];?>">
+                                            <?php echo $cargo["descricaoCargoArtista"];?>
+                                        </option>
+                                        <?php  }
+                                        ?>
+                                    </select>
+                                    <div class="invalid-feedback" style="font-size: 16px; text-align: left">
+                                        Selecione o cargo
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                        <!--FORM Utilizador-->
+                        <div class="col pt-2">
+                            <center>
+                                <div class="col-8 d-none d-md-block d-lg-block d-xl-block">
+                                    <label for="UtilizadorPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Utilizador:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 d-sm-block d-md-none d-lg-none d-xl-none ">
+                                    <label for="UtilizadorPedido" style="width: 100%; text-align: left;">
+                                        <p class="p"><b>Utilizador:</b></p>
+                                    </label>
+                                </div>
+
+                                <div class="col-8 align-items-center" style="margin-top: -15px" required>
+                                    <select name="txtIdUtilizador" id="txtIdUtilizador"
+                                        class="form-control custom-select" required>
+                                        <option selected value="">Selecione...</option>
+                                        <?php 
+                                        $utilizadores = new UtilizadorDao();
+                                        $lista = $utilizadores->Buscar();
+                                        foreach ($lista as $utilizador) { ?>
+                                        <option value="<?php echo $utilizador["idUtilizador"];?>">
+                                            <?php echo $utilizador["nomeUtilizador"]." ".$utilizador["sobrenomeUtilizador"];?>
+                                        </option>
+                                        <?php  }
+                                        ?>
+                                    </select>
+                                    <div class="invalid-feedback" style="font-size: 16px; text-align: left">
+                                        Selecione o Utilizador
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--COLEÇÃO BOTÃO-->
+            <div class="col text-center" style="height: auto">
+                <!--FORM BOTAO-->
+                <div class="col d-flex justify-content-center pt-4">
+                    <center>
+                        <div class="col mb-5">
+                            <input onClick="ClickLogar()" name="btnSubmit" class="btn" type="submit" value="Cadastrar"
+                                name="btnSubmit" id="btnSubmit" style="width: 100%;"> <br><span id="spinner"
+                                class=''></span>
+                            <br>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</form>
