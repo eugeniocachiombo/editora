@@ -7,7 +7,7 @@ a:hover{
     background: #299;
     border-radius: 30px;
     color: white;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 #notificacao:hover, #balaochat:hover, #nota:hover {
@@ -20,3 +20,6 @@ ul:hover li{
     display: block;
 }
 
+.card-body:hover{
+    overflow-y: scroll; 
+}
