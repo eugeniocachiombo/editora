@@ -9,7 +9,7 @@
             <?php require "../app/views/painel/inclusao/card/card.php"; ?>
             
         </div>
-
+        
         <div class="row">
             <div class="d-none d-lg-flex" style="min-height: 16vh"></div>
 
