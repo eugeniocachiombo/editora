@@ -1,15 +1,15 @@
-<div class="container-fluid " >
+<div class="container-fluid bg-white" >
     
     <div class="col-12 ">
         <?php require "../app/views/painel/inclusao/menu/telaGrande/menuTelaGrande.php"; ?>
     </div>
     
-    <div class="col d-flex">
+    <div class="col d-flex ">
         <div class="col-4 d-none d-lg-flex" style="width: 310px;">
             <?php require "../app/views/painel/inclusao/card/card.php"; ?>
-            
         </div>
         
+        <div class="container ">
         <div class="row">
             <div class="d-none d-lg-flex" style="min-height: 16vh"></div>
 
@@ -265,6 +265,7 @@
             </div>
 
             <?php require "../app/views/painel/inclusao/menu/inclusao/botaoMostrarMenu.php"; ?>
+        </div>
         </div>
     </div>
 </div>
