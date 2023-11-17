@@ -1,6 +1,8 @@
 <?php 
 // CAMPO DE PESQUISA
-require "../app/views/default/campoPesquisaPaginacao.php"; ?>
+require "../app/core/pegarURI.php";
+$uri[1] != "Index" ? require "../app/views/default/campoPesquisaPaginacao.php" : "";
+?>
 <hr>
 
 <?php 
@@ -13,7 +15,7 @@ foreach ($lista as $obra) { ?>
 
     <div class="d-table d-lg-flex " style="justify-content: space-around; width: 100% ">
 
-        <div class="border col-1 justify-content-center align-items-center">
+        <div class=" col-1 justify-content-center align-items-center">
             <img src="/assets/img/icons/music.png" alt="Perfil" width="100%">
         </div>
 

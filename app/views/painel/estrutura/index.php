@@ -13,7 +13,7 @@
                 <div class="d-none d-lg-flex" style="min-height: 16vh"></div>
 
                 <div class="row bg-white text-dark pb-4 pt-3"
-                    style="display: block; flex-wrap: wrap;background: #57489b;height: auto">
+                    style="display: block; flex-wrap: wrap; background: #57489b; height: auto">
                     <center>
                         <div class="row d-table d-md-flex m-2 ">
                             <div class="col m-1 p-3"
@@ -46,10 +46,11 @@
                             </div>
                         </div>
 
-                        <div class="row d-table d-md-flex pt-2 ">
+                        <div class="row d-table d-md-flex p-4 justify-content-center align-items-center"
+                            style="background: #299; border: 3px solid #299; border-radius: 13px">
                             <div class="col m-1"
                                 style="height: 30vh; background: #57489b; color: white; border: 3px solid #299; border-radius: 13px">
-                                <br><b>Artísta com mais Obras</b> 
+                                <br><b>Artísta com mais Obras</b>
                                 <br>
                                 <div class="row d-flex justify-content-center align-items-center" style="height: 100px">
                                     <div class="col-4 text-end">
@@ -85,7 +86,8 @@
                                 <br>
                                 <div class="row d-flex justify-content-center align-items-center" style="height: 100px">
                                     <div class="col-4 ">
-                                            <i class="fas fa-music d-flex justify-content-end align-items-center" style="font-size: 50px; width: 80px; height: 100px; object-fit: cover;"></i>
+                                        <i class="fas fa-music d-flex justify-content-end align-items-center"
+                                            style="font-size: 50px; width: 80px; height: 100px; object-fit: cover;"></i>
                                     </div>
 
                                     <div class="col ">
@@ -107,15 +109,31 @@
                             </div>
                         </div>
 
-
                         <div class="row d-table d-md-flex pt-2">
-                            <div class="col border" style="height: 30vh">
-                                <b>Músicas novas</b>
-                                <p>Detalhes sobre a músicas e os cantores</p>
-                                <?php require "../app/views/obra/formulario/buscar.php"; ?>
+                            <div class="container"
+                                style="height: auto; background: #57489b; color: white; border: 3px solid #299; border-radius: 13px">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row ">
+                                            <div class="col pt-2" style="background: #299; border: 3px solid white; border-radius: 13px">
+                                                <h4>Músicas novas</h4>
+                                                <p>Detalhes sobre as músicas novas e os cantores</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <?php require "../app/views/obra/formulario/buscar.php"; ?>
+                                        </div>
+
+                                        <div class="row" style="background: #299; min-height: 5vh;  border: 3px solid white; border-radius: 13px">
+                                            <div class="col" >
+                                                Está camada apenas mostrará as 4 músicas mais recentes
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
 
                         <div class="row d-table d-md-flex pt-2">
                             <div class="col border m-1" style="height: 30vh">
@@ -125,265 +143,6 @@
                             <div class="col border m-1" style="height: 30vh">
                                 <b>Eventos do cantor</b>
                             </div>
-                        </div>
-
-                        <div class="row d-table d-md-flex pt-2">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit impedit a quidem hic
-                            animi
-                            voluptate magni quam? Exercitationem quod odit fuga consequuntur excepturi repellat odio
-                            facere
-                            fugiat, doloribus commodi beatae?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur beatae doloribus odio
-                            fugit
-                            molestias vitae, quibusdam quaerat optio rerum nostrum itaque error aperiam et eius amet
-                            doloremque enim! Repudiandae, culpa!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsum aspernatur quis
-                            molestiae.
-                            Deserunt et tempore totam, doloribus doloremque eligendi numquam repellendus molestias
-                            consectetur deleniti, impedit vel adipisci alias debitis!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo iste, laboriosam
-                            veniam aut quia dignissimos! Neque, aliquam ab. Dolor animi iure et tempora ipsa dolores
-                            perspiciatis officiis dolorem consectetur!
                         </div>
                     </center>
                 </div>
