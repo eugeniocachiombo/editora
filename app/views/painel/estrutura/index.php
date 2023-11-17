@@ -12,9 +12,18 @@
             <div class="row d-flex justify-content-center">
                 <div class="d-none d-lg-flex" style="min-height: 16vh"></div>
 
+
                 <div class="row bg-white text-dark pb-4 pt-3"
                     style="display: block; flex-wrap: wrap; background: #57489b; height: auto">
                     <center>
+
+                        <div class="row"
+                            style="background: #299; min-height: 5vh;  border: 3px solid white; border-radius: 13px">
+                            <div class="col text-start text-white">
+                                <b>Informções Rápidas </b>
+                            </div>
+                        </div>
+
                         <div class="row d-table d-md-flex m-2 ">
                             <div class="col m-1 p-3"
                                 style="background: #57489b; color: white; border: 3px solid #299; border-radius: 13px">
@@ -48,6 +57,13 @@
 
                         <div class="row d-table d-md-flex p-4 justify-content-center align-items-center"
                             style="background: #299; border: 3px solid #299; border-radius: 13px">
+
+                            <div class="row bg-white text-dark" style="border: 3px solid white; border-radius: 13px">
+                                <div class="col text-start text-dark">
+                                    <b>Destaques <i class="fas fa-trophy"></i></b>
+                                </div>
+                            </div>
+
                             <div class="col m-1"
                                 style="height: 30vh; background: #57489b; color: white; border: 3px solid #299; border-radius: 13px">
                                 <br><b>Artísta com mais Obras</b>
@@ -115,7 +131,8 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="row ">
-                                            <div class="col pt-2" style="background: #299; border: 3px solid white; border-radius: 13px">
+                                            <div class="col pt-2"
+                                                style="background: #299; border: 3px solid white; border-radius: 13px">
                                                 <h4>Músicas novas</h4>
                                                 <p>Detalhes sobre as músicas novas e os cantores</p>
                                             </div>
@@ -125,8 +142,9 @@
                                             <?php require "../app/views/obra/formulario/buscar.php"; ?>
                                         </div>
 
-                                        <div class="row" style="background: #299; min-height: 5vh;  border: 3px solid white; border-radius: 13px">
-                                            <div class="col" >
+                                        <div class="row"
+                                            style="background: #299; min-height: 5vh;  border: 3px solid white; border-radius: 13px">
+                                            <div class="col">
                                                 Está camada apenas mostrará as 4 músicas mais recentes
                                             </div>
                                         </div>
@@ -136,12 +154,24 @@
                         </div>
 
                         <div class="row d-table d-md-flex pt-2">
-                            <div class="col border m-1" style="height: 30vh">
+                            <div class="col border m-1 text-white"
+                                style="height: 30vh; background: #57489b; border: 3px solid #299; border-radius: 13px">
                                 <b>Eventos da empresa</b>
+
+                                <div class="col d-flex justify-content-center align-items-center"
+                                    style="height: auto; background: #57489b; color: white; height: 150px">
+                                    <i class="fas fa-building display-1" ></i>
+                                </div>
                             </div>
 
-                            <div class="col border m-1" style="height: 30vh">
+                            <div class="col border m-1 text-white"
+                                style="height: 30vh; background: #57489b; border: 3px solid #299; border-radius: 13px">
                                 <b>Eventos do cantor</b>
+
+                                <div class="col d-flex justify-content-center align-items-center"
+                                    style="height: auto; background: #57489b; color: white; height: 150px">
+                                    <i class="fas fa-tasks display-1" ></i>
+                                </div>
                             </div>
                         </div>
                     </center>
